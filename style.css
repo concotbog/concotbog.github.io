@@ -16,7 +16,7 @@ nav {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
-  align:left;
+  align: left;
 }
 .nav-links {
   display: flex;
@@ -48,16 +48,28 @@ h1 {
   color: wheat;
 }
 .backgroundImg {
-  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 65%;
+  height: 100%;
 }
 
+#article1 {
+  height: 100%;
+  width: 100%;
+  margin-top: 10%;
+}
+.articletxt {
+  margin-top: 15%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 2;
+}
 /*-------------
-carousel slide
+carousel slider
 ---------------*/
 .slider {
   width: 70%;
@@ -65,14 +77,13 @@ carousel slide
   margin-top: 5%;
 }
 #img1 {
-  height: 90vh; 
+  height: 90vh;
 }
 #img2 {
   height: 90vh;
 }
 #img3 {
   height: 90vh;
-
 }
 
 /*tablets*/
@@ -80,7 +91,6 @@ carousel slide
   .nav-links {
     width: 60%;
   }
-  
 }
 /*mobile*/
 @media screen and (max-width: 768px) {
@@ -106,7 +116,6 @@ carousel slide
   .burger {
     display: block;
   }
- 
 }
 .nav-active {
   transform: translateX(0%);
