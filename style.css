@@ -16,7 +16,6 @@ nav {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
-  align: left;
 }
 .nav-links {
   display: flex;
@@ -44,14 +43,17 @@ nav {
   margin: 5px;
   transition: all 0.3s ease;
 }
-h1 {
-  color: wheat;
+.bgimg {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
-.backgroundImg {
+.parallax {
+  background-image: url("https://i.ibb.co/cCCyysP/2021811115849.png");
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 100%;
 }
@@ -91,11 +93,31 @@ carousel slider
   .nav-links {
     width: 60%;
   }
+  .bgimg {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  .slider {
+    width: 100%;
+  }
+}
+
+/*for phones*/
+@media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 /*mobile*/
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
+  }
+  .bgimg {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
   }
   .nav-links {
     position: absolute;
@@ -106,7 +128,8 @@ carousel slider
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%; /*width of the navbar 100% for full screen*/
+    width: 50%;
+    z-index: 1000; /*width of the navbar 100% for full screen*/
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
@@ -115,6 +138,9 @@ carousel slider
   }
   .burger {
     display: block;
+  }
+  .slider {
+    width: 100%;
   }
 }
 .nav-active {
