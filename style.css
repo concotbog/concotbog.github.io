@@ -128,8 +128,8 @@ carousel slider
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    z-index: 1000; /*width of the navbar 100% for full screen*/
+    width: 50%; /*width of the navbar 100% for full screen*/
+    z-index: 1000;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
