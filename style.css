@@ -16,6 +16,7 @@ nav {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
+  align:left;
 }
 .nav-links {
   display: flex;
@@ -55,11 +56,31 @@ h1 {
   height: 65%;
 }
 
+/*-------------
+carousel slide
+---------------*/
+.slider {
+  width: 70%;
+  margin: auto;
+  margin-top: 5%;
+}
+#img1 {
+  height: 90vh; 
+}
+#img2 {
+  height: 90vh;
+}
+#img3 {
+  height: 90vh;
+
+}
+
 /*tablets*/
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
   }
+  
 }
 /*mobile*/
 @media screen and (max-width: 768px) {
@@ -85,6 +106,7 @@ h1 {
   .burger {
     display: block;
   }
+ 
 }
 .nav-active {
   transform: translateX(0%);
