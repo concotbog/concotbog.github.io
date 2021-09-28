@@ -82,6 +82,21 @@ h1 {
   width: 100%;
   height: 65%;
 }
+/* carousel */
+.slider {
+  width: 70%;
+  margin: auto;
+  margin-top: 5%;
+}
+#img1 {
+  height: 90vh;
+}
+#img2 {
+  height: 90vh;
+}
+#img3 {
+  height: 90vh;
+}
 
 /*tablets*/
 @media screen and (max-width: 1024px) {
