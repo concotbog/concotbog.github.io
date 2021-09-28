@@ -11,6 +11,9 @@ nav {
   background-color: #912338;
   font-family: "Poppins", sans-serif;
 }
+.banner {
+  
+}
 .logo {
   color: white;
   text-transform: uppercase;
@@ -48,7 +51,7 @@ nav {
 }
 .bgimg {
   width: 100%;
-  height: 90%;
+  height: 100%;
   opacity: 0;
 }
 .parallax {
@@ -62,6 +65,14 @@ nav {
 }
 h1 {
   color: wheat;
+}
+.articletxt {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Arial", sans-serif;
+  font-size: medium;
+  line-height: 2;
 }
 .backgroundImg {
   background-size: cover;
