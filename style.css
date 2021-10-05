@@ -14,6 +14,11 @@ nav {
 .banner {
   
 }
+
+.noscroll {
+  overflow: hidden;
+}
+
 .logo {
   color: white;
   text-transform: uppercase;
@@ -21,15 +26,26 @@ nav {
   font-size: 20px;
   max-height: 8vh;
   min-height: 60px;
-  margin-left: 10px;
 }
+
+.footerimg{
+  max-height: 80px;
+  max-width: 200px;
+}
+
 .nav-links {
   display: flex;
-  width: 30%;
-  justify-content: space-around;
+  width: 35%;
+  min-width: 800px;
+  justify-content: space-between;
+  margin-bottom: 0%;
+  margin-left: 20%;
+  margin-right: 20%;
+  align-items: center;
 }
 .nav-links li {
   list-style: none;
+  margin-left: 0%;
 }
 .nav-links a {
   color: white;
@@ -55,7 +71,7 @@ nav {
   opacity: 0;
 }
 .parallax {
-  background-image: url("agh.jpeg");
+  /* background-image: url("pictures/about-us/agh.jpeg"); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -63,17 +79,73 @@ nav {
   width: 100%;
   height: 100%;
 }
+
+.footer {
+  margin-top: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 100%;
+  background-color: #912338;
+  float: left;
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.footertext {
+  margin-right: 5%;
+  font-family: "Arial", sans-serif;
+  font-size: medium;
+  line-height: 2;
+  color: aliceblue;
+  min-width: 400px;
+}
+
 h1 {
   color: wheat;
 }
 .articletxt {
   margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
   font-family: "Arial", sans-serif;
   font-size: medium;
   line-height: 2;
 }
+
+.execpic {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.articleimgtxt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.execblurbwrapper{
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.execblurbs{
+  font-family: "Arial", sans-serif;
+  font-size: medium;
+  text-align: center;
+  margin-top: 0%;
+}
+
 .backgroundImg {
   background-size: cover;
   background-attachment: fixed;
@@ -107,14 +179,77 @@ h1 {
 /*mobile*/
 @media screen and (max-width: 768px) {
   nav {
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   
   body {
     overflow-x: hidden;
   }
+  .banner{
+    position: sticky;
+    width: 100%;
+  }
+
+  .articletxt {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .articleimgtxt {
+    flex-direction: column;
+  }
+
+  .execblurbwrapper{
+    flex-direction: column;
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .execblurbs {
+  margin-top: 5%;
+  }
+
+  .articleimg {
+    width: 100%;
+    padding-left: 0%;
+  }
+
   .nav-links {
-    position: absolute;
+    margin-left: 0%;
+    margin-right: 0%;
+    justify-content: space-around;
+  }
+
+  .footertext {
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: "Arial", sans-serif;
+    font-size: small;
+    line-height: 2;
+    color: aliceblue;
+    min-width: 0;
+  }
+
+  .footer {
+    margin-top: 5%;
+    width: 100%;
+    background-color: #912338;
+    float: left;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .nav-links {
+    position: fixed;
+    min-width: 1px;
     right: 0px;
     height: 92vh;
     top: 8vh;
