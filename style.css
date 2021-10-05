@@ -119,6 +119,25 @@ h1 {
   line-height: 2;
 }
 
+.sponsorpicwrapper {
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sponsorpic{
+  max-width: 300px;
+  max-height: 300px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
 .execpic {
   max-width: 300px;
   max-height: 300px;
