@@ -66,12 +66,14 @@ nav {
   transition: all 0.3s ease;
 }
 .bgimg {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 80vh;
   opacity: 0;
+  
 }
 .parallax {
   /* background-image: url("pictures/about-us/agh.jpeg"); */
+  /* background-size: cover; */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -175,12 +177,47 @@ h1 {
   height: 65%;
 }
 /* carousel */
-.slider {
-  width: 70%;
-  margin: auto;
-  margin-top: 5%;
+.sliderbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-#img1 {
+.carousel-item {
+  max-height: 500px;
+  display: none;
+  justify-content: center;
+}
+.carousel-item.active {
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.carousel-item.carousel-item-next{
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+}
+/* .carousel img{
+  height:max-content;
+} */
+.slider {
+  /* width: 70%; */
+  height: 100%;
+  width: 40vw;
+  background-position: center;
+  padding: 3%;
+  /* margin-top: 5%; */
+  /* margin-bottom: 5%; */
+}
+
+.slider img {
+  /* height: 350px; */
+  max-height: inherit;
+  width: auto;
+}
+/* #img1 {
   height: 90vh;
 }
 #img2 {
@@ -188,7 +225,7 @@ h1 {
 }
 #img3 {
   height: 90vh;
-}
+} */
 
 /*tablets*/
 @media screen and (max-width: 1024px) {
@@ -200,6 +237,39 @@ h1 {
 @media screen and (max-width: 768px) {
   nav {
     justify-content: flex-end;
+  }
+
+  .carousel-item {
+    /* max-width: 70%; */
+    display: none;
+    justify-content: center;
+  }
+  .carousel-item.active {
+    /* max-width: 70%; */
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-item.carousel-item-next{
+    /* max-width: 70%; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    /* margin-top: 5%; */
+    /* margin-bottom: 5%; */
+  }
+
+  .slider img {
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
   
   body {
