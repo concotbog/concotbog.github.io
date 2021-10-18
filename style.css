@@ -199,6 +199,11 @@ h1 {
   display: flex;
   justify-content: center;
 }
+.carousel-item.carousel-item-prev{
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+}
 /* .carousel img{
   height:max-content;
 } */
