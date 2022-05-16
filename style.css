@@ -8,7 +8,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #912338;
+  background-color: #802424;
   font-family: "Poppins", sans-serif;
 }
 .banner {
@@ -87,7 +87,7 @@ nav {
   padding-top: 3%;
   padding-bottom: 3%;
   width: 100%;
-  background-color: #912338;
+  background-color: #802424;
   float: left;
   font-size: 14px;
   position: relative;
@@ -329,7 +329,7 @@ h1 {
   .footer {
     margin-top: 5%;
     width: 100%;
-    background-color: #912338;
+    background-color: #802424;
     float: left;
     font-size: 14px;
     position: relative;
@@ -348,7 +348,7 @@ h1 {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #912338;
+    background-color: #802424;
     display: flex;
     flex-direction: column;
     align-items: center;
