@@ -52,6 +52,8 @@ nav {
 .icon {
   width: 1.5rem;
   height: 1.5rem;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
 }
 .burger {
   display: none;
