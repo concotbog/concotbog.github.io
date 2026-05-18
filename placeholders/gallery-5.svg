@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
-  <rect width="1200" height="700" fill="#802424"/>
-  <rect x="70" y="90" width="1060" height="520" rx="26" fill="#111827" fill-opacity="0.22"/>
-  <text x="60" y="120" font-family="Arial, sans-serif" font-weight="900" font-size="56" fill="#ffffff" fill-opacity="0.9">Gallery 5</text>
-</svg>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700"><path fill="#802424" d="M0 0h1200v700H0z"/><rect width="1060" height="520" x="70" y="90" fill="#111827" fill-opacity=".22" rx="26"/><text x="60" y="120" fill="#fff" fill-opacity=".9" font-family="Arial, sans-serif" font-size="56" font-weight="900">Gallery 5</text></svg>
