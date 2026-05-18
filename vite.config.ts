@@ -9,14 +9,16 @@ export default defineConfig({
     react(),
     ViteImageOptimizer({
       cache: true,
+      includePublic: true,
+      logStats: true,
       png: {
         quality: 80,
       },
       jpeg: {
-        quality: 80,
+        quality: 50,
       },
       jpg: {
-        quality: 80,
+        quality: 50,
       },
       webp: {
         quality: 80,
