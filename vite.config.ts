@@ -3,10 +3,10 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "./",
+  base: "/concotbog.github.io/",
   plugins: [react()],
   build: {
-    outDir: ".", 
+    outDir: "dist",
     emptyOutDir: false,
   },
 });
