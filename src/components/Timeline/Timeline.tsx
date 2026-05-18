@@ -34,6 +34,7 @@ export default function Timeline() {
                     src={yearData.teamPhotoSrc}
                     alt={`Team in ${yearData.year}`}
                     className={styles.teamPhoto}
+                    loading="lazy"
                   />
                 )}
 

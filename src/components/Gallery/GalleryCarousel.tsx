@@ -59,6 +59,7 @@ export function GalleryCarousel({ gallery }: { gallery: Gallery }) {
           className={styles.image}
           src={active.src}
           alt={active.alt}
+          loading="lazy"
         />
       </div>
     </section>

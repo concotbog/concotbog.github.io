@@ -22,10 +22,17 @@ export function OrgLogoStrip() {
           className={styles.logoFirst}
           src={l.src}
           alt={l.label}
+          loading="lazy"
         />
       ))}
       {others.map((l) => (
-        <img key={l.id} className={styles.logo} src={l.src} alt={l.label} />
+        <img
+          key={l.id}
+          className={styles.logo}
+          src={l.src}
+          alt={l.label}
+          loading="lazy"
+        />
       ))}
     </div>
   );

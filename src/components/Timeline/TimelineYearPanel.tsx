@@ -7,14 +7,20 @@ export function TimelineYearPanel({ year }: { year: TeamHistoryYear }) {
     <section className={styles.panel} aria-label={`Details for ${year.year}`}>
       <div className={styles.panelHeader}>
         <div className={styles.panelTitle}>
-          {year.year} <span className={styles.panelLocation}>— {year.location}</span>
+          {year.year}{" "}
+          <span className={styles.panelLocation}>— {year.location}</span>
         </div>
         <div className={styles.panelSummary}>{year.summary}</div>
       </div>
 
       <div className={styles.panelBody}>
         <div className={styles.photoWrap}>
-          <img className={styles.photo} src={year.teamPhotoSrc} alt={`Team photo ${year.year}`} />
+          <img
+            className={styles.photo}
+            src={year.teamPhotoSrc}
+            alt={`Team photo ${year.year}`}
+            loading="lazy"
+          />
         </div>
         <div>
           <div className={styles.blockTitle}>Prizes</div>
@@ -22,6 +28,6 @@ export function TimelineYearPanel({ year }: { year: TeamHistoryYear }) {
         </div>
       </div>
     </section>
-  )
+  );
 }
 

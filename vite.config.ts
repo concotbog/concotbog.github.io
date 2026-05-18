@@ -10,19 +10,19 @@ export default defineConfig({
     ViteImageOptimizer({
       cache: true,
       png: {
-        quality: 100,
+        quality: 80,
       },
       jpeg: {
-        quality: 100,
+        quality: 80,
       },
       jpg: {
-        quality: 100,
+        quality: 80,
       },
       webp: {
-        lossless: true,
+        quality: 80,
       },
       avif: {
-        lossless: true,
+        quality: 70,
       },
       svg: {
         multipass: true,

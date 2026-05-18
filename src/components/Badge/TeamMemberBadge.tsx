@@ -5,13 +5,18 @@ export function TeamMemberBadge({ member }: Readonly<{ member: ExecTeamMember }>
   return (
     <article className={styles.card}>
       <div className={styles.avatarWrap}>
-        <img className={styles.avatar} src={member.imageSrc} alt={member.name} />
+        <img
+          className={styles.avatar}
+          src={member.imageSrc}
+          alt={member.name}
+          loading="lazy"
+        />
       </div>
       <div className={styles.body}>
         <div className={styles.name}>{member.name}</div>
         <div className={styles.position}>{member.position}</div>
       </div>
     </article>
-  )
+  );
 }
 
