@@ -1,29 +1,37 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import viteImagemin from "vite-plugin-imagemin";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 // https://vite.dev/config/
 export default defineConfig({
   base: "/",
   plugins: [
     react(),
-    viteImagemin({
-      optipng: {
-        optimizationLevel: 7,
+    ViteImageOptimizer({
+      cache: true,
+      png: {
+        quality: 100,
       },
-      jpegTran: {
-        progressive: true,
+      jpeg: {
+        quality: 100,
       },
-      svgo: {
+      jpg: {
+        quality: 100,
+      },
+      webp: {
+        lossless: true,
+      },
+      avif: {
+        lossless: true,
+      },
+      svg: {
+        multipass: true,
         plugins: [
           {
-            name: "removeViewBox",
-            active: false,
+            name: "preset-default",
           },
+          "removeViewBox",
         ],
-      },
-      gifsicle: {
-        optimizationLevel: 3,
       },
     }),
   ],
