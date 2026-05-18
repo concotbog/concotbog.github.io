@@ -1,6 +1,6 @@
 const allImages = import.meta.glob(
-  "/public/pictures/gallery/**/*.{jpeg,jpg,JPG,png}",
-  { eager: true, as: "url" },
+  "/pictures/gallery/**/*.{jpeg,jpg,JPG,png}",
+  { eager: true, query: "?url", import: "default" },
 );
 
 function getImagesFromFolder(folderName: string, title: string) {
