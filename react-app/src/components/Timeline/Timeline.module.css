@@ -1,0 +1,142 @@
+.timelineContent {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow:
+      0px 0px 10px -1px rgba(0, 0, 0, 0.33);
+  border: 1px solid var(--color-border);
+    border-radius: 18px;
+}
+
+.timelineContent img {
+  border-radius: 10px;
+}
+
+.timelineContent h4 {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
+.timelineContent p {
+  padding-bottom: 0.5rem;
+}
+
+.year:hover {
+  border-color: rgba(128, 36, 36, 0.28);
+}
+
+.yearActive {
+  border-color: rgba(128, 36, 36, 0.35);
+  background: rgba(128, 36, 36, 0.08);
+}
+
+.yearLabel {
+  font-weight: 900;
+  color: var(--color-text-strong);
+}
+
+.yearSub {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.panel {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.panelTitle {
+  font-weight: 900;
+  color: var(--color-text-strong);
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.panelLocation {
+  color: var(--color-text);
+  font-weight: 800;
+}
+
+.panelSummary {
+  margin-top: 10px;
+  color: var(--color-text);
+  line-height: 1.65;
+}
+
+.panelBody {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+}
+
+.photoWrap {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(128, 36, 36, 0.16);
+  background: rgba(128, 36, 36, 0.05);
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.yearTitle {
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.summaryText {
+  margin: 0 !important;
+}
+
+.prizesContainer {
+  padding: 0;
+}
+
+.prizeList {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  color: var(--color-text);
+  list-style: none;
+}
+
+.prizeItem {
+  line-height: 1.5;
+  display: flexbox;
+  align-items: center;
+  gap: .75rem;
+  font-weight: 700;
+}
+
+.medal {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 980px) {
+  .layout {
+    grid-template-columns: 300px 1fr;
+    align-items: start;
+  }
+
+  .rail {
+    position: sticky;
+    top: 84px;
+  }
+
+  .panelBody {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: start;
+  }
+}
+

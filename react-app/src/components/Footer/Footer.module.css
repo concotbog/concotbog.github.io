@@ -1,0 +1,84 @@
+.footer {
+  background: var(--color-primary);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 28px 0;
+}
+
+.inner {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.blockTitle {
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 10px;
+}
+
+.text {
+  line-height: 1.65;
+  margin: 0 0 8px;
+}
+
+.meta {
+  margin-top: 12px;
+  font-size: 0.92rem;
+  opacity: 0.9;
+}
+
+.link {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.logoStrip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+  justify-items: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.logoFirst {
+  max-height: 80px;
+  border-radius: 10px;
+  object-fit: contain;
+  grid-column: span 2 / span 2;
+}
+
+.logo {
+  display: grid;
+  max-height: 80px;
+  border-radius: 10px;
+  object-fit: contain;
+  grid-row-start: 2;
+}
+
+@media (min-width: 920px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .right {
+    justify-self: end;
+    max-width: 420px;
+    text-align: right;
+  }
+
+  .logoStrip {
+    justify-content: flex-end;
+  }
+}
+

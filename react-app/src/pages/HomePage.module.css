@@ -1,0 +1,11 @@
+.content {
+  padding: 48px 0 72px;
+}
+
+.prose {
+  display: grid;
+  gap: 16px;
+  color: var(--color-text);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}

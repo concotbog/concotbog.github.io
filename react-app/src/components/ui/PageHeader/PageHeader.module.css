@@ -1,0 +1,20 @@
+.header {
+  padding: 20px 0 22px;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-text-strong);
+  font-size: clamp(2rem, 2.6vw, 2.6rem);
+  letter-spacing: -0.03em;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  color: var(--color-text);
+  line-height: 1.6;
+  max-width: 70ch;
+}
+

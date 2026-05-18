@@ -1,0 +1,54 @@
+:root {
+  --color-primary: #802424;
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-border: rgba(15, 23, 42, 0.12);
+  --color-text: rgba(15, 23, 42, 0.86);
+  --color-text-strong: rgba(15, 23, 42, 0.95);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 12px 24px rgba(15, 23, 42, 0.12);
+
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-text-strong);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+/* Use Poppins for headings to match original site feel */
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+}
