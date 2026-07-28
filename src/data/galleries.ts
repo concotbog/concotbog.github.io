@@ -1,5 +1,5 @@
 const allImages = import.meta.glob(
-  "/public/pictures/gallery/**/*.{jpeg,jpg,JPG,png}",
+  "/public/pictures/gallery/**/*.webp",
   { eager: true, query: "?url", import: "default" },
 );
 
