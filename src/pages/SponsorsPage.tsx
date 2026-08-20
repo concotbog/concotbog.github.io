@@ -7,12 +7,12 @@ import styles from "./SponsorsPage.module.css";
 
 export function SponsorsPage() {
   const [pdfLang, setPdfLang] = useState<"en" | "fr">("en");
-  const sponsorshipEmail = "sponsorship.toboggan@csce.ecaconcordia.ca"
+  const sponsorshipEmail = "sponsorship.toboggan@csce.ecaconcordia.ca";
   return (
     <Container className={styles.page}>
       <PageHeader
         title="Sponsors"
-        subtitle="Thank you to the organizations that support our team."
+        subtitle="Our yearly achievements could not be possible without the generous support of our sponsors. Their invaluable backing and partnership have been instrumental in bringing our project to life. The shared commitment to the toboggan project enables the successful completion and attendance to GNCTR every year."
       />
       <div className={styles.grid}>
         {sponsors.map((s) => (
@@ -26,8 +26,8 @@ export function SponsorsPage() {
           We are always looking for new partners to support our mission. Take a
           look at our sponsorship packages below to see how we can collaborate,
           and feel free to reach out to us at{" "}
-          <a href={`mailto:${sponsorshipEmail}`}>{sponsorshipEmail}</a> {" "}
-          for more details.
+          <a href={`mailto:${sponsorshipEmail}`}>{sponsorshipEmail}</a> for more
+          details.
         </p>
       </div>
 
