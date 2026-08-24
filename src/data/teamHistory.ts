@@ -54,7 +54,7 @@ export const teamHistoryYears: TeamHistoryYear[] = [
     teamPhotoSrc: '/pictures/team-history/2023.jpeg',
     summary: "This year marked a significant expansion for our delegation, bringing together a larger group to showcase our community impact and claim the title of the fan favorite.",
     prizes: [
-      {id: 'people-choice', label: "Poeple's Choice", place: 1}
+      {id: 'people-choice', label: "People's Choice", place: 1}
     ]
   },
   {

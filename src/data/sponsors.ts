@@ -42,8 +42,8 @@ export const sponsors: Sponsor[] = [
     id: "demathieu-bard",
     name: "Demathieu Bard Construction",
     logoSrc: "/pictures/sponsors/demathieu-bard.jpeg",
-    thankYou: "Thank you for your insights on our de`signs",
-    websiteUrl: "https://fiberglassrebar.com/",
+    thankYou: "Thank you for your insights on our designs",
+    websiteUrl: "https://cdbtechno.com/en/",
   },
   {
     id: "poulet-rouge",
