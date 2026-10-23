@@ -14,7 +14,6 @@ export function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
       </div>
       <div className={styles.body}>
         <div className={styles.name}>{sponsor.name}</div>
-        <div className={styles.message}>{sponsor.thankYou}</div>
       </div>
     </article>
   );

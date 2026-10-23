@@ -81,7 +81,7 @@ export const execTeamMembers: ExecTeamMember[] = [
   {
     id: 'vp-finance',
     name: 'Yikay Fu',
-    position: 'VP Finance',
+    position: 'VP Finance & Sustainability',
     imageSrc: '/pictures/exec-team/finance.jpeg',
   },
   {

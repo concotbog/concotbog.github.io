@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && cd dist && git add -A && (git commit -m \"Automated deployment $(date +%Y-%m-%d)\" || echo 'No files to commit.') && if ! git diff --cached --exit-code; then git push origin main; else echo 'Nothing to push.'; fi"
   },
   "dependencies": {
     "motion": "^12.38.0",
